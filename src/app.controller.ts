@@ -41,7 +41,6 @@ export class AppController {
     @Param() params: { id: string },
     @Body() task: TaskDto,
   ): Promise<TaskDto> {
-    console.log(params.id, 'id', task, 'task');
     return this.appService.updateTask(params.id, task);
   }
 
