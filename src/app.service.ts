@@ -8,7 +8,7 @@ import { db } from '../config/firebase';
 import { Task } from './models/task';
 import { TaskDto } from './models/dtos/taskDto';
 import dayjs from 'dayjs';
-
+import { apiDescription } from './utils/helpers';
 @Injectable()
 export class AppService {
   public async getTasks(): Promise<Task[] | HttpException> {
@@ -71,6 +71,6 @@ export class AppService {
   }
 
   public getApiInfo(): string {
-    return 'Hi welcome to tasks API <br> Endpoints available: <br>  GET /tasks retrieved all tasks  <br> POST /task inserts tasks <br>  PUT /task/:ID update task <br> DELETE /task/:ID delete task <br> ';
+    return apiDescription;
   }
 }

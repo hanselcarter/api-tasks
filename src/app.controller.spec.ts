@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-
+import { apiDescription } from './utils/helpers';
 describe('AppController', () => {
   let appController: AppController;
 
@@ -15,8 +15,8 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getTasks()).toBe('Hello World!');
+    it('should return an Api description', () => {
+      expect(appController.getApiInfo()).toBe(apiDescription);
     });
   });
 });
