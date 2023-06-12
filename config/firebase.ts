@@ -1,5 +1,6 @@
 import * as admin from 'firebase-admin';
 
+//THIS IS A FREE TIER, I HAD AN ISSUE DURING DEPLOYMENT WITH FIREBASE ID ENV SO I HAD DO IT DIRECTLY BUT IT DOES NOT MATTER SINCE IT IS A FREE TIER AND WILL DELETE SOON PROJECT
 admin.initializeApp({
   credential: admin.credential.cert({
     privateKey:
