@@ -5,7 +5,7 @@ TASKS API, I was able to complete all features also I tested every method on the
 ## Endpoints available
 
 - GET: https://web-production-6e0dd.up.railway.app/tasks get all tasks
-- Post: https://web-production-6e0dd.up.railway.app/task this endpoint creates a task and receives a body which has a task dto form which is this one {
+- Post: https://web-production-6e0dd.up.railway.app/task this endpoint creates a task and receives a body which has a task dto form which is this one (status can be pending or completed following the typescript enum model I created) {
   "description": "WARSOW from railway 2",
   "title": "another 22",
   "status": "pending"
