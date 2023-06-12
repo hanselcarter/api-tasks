@@ -1,6 +1,6 @@
 ## Description
 
-TASKS API, I was able to complete all features also I tested every method on the app service created, 14 tests will run if run npm run test, app deployed here: https://web-production-6e0dd.up.railway.app/
+TASKS API, I was able to complete all features also I tested every method on the app service created, 14 tests will run if run npm run test, easily tested in postman app deployed here: https://web-production-6e0dd.up.railway.app/
 
 ## Endpoints available
 
